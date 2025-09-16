@@ -1,0 +1,17 @@
+Estructuras en C
+Archivos en C
+
+--------
+(1)
+
+Recibir: {
+    nombre
+    apellido
+    edad
+    estatura (cm)
+}
+Guardar en un archivo
+
+--------
+
+(2) Abrir archivo 
