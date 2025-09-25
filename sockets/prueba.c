@@ -20,7 +20,7 @@ int main() {
         perror("socket error");
     }
 
-    int r = bind(fd, (sockaddr*) &server, sizeof(sockaddr));
+    int r = bind(fd, (struct sockaddr*) &server, sizeof(struct sockaddr));
     if (r < 0) {
         perror("bind error");
     }
@@ -28,7 +28,7 @@ int main() {
 
     r = listen(fd, BACKLOG);
 
-    size_t size = sizeof(struct sockaddr_in);
+    socklen_t size = sizeof(struct sockaddr_in);
     int fd2 = accept(fd, (sockaddr*) &client, &size);
     if (fd2 < 0) {
         perror();
