@@ -1,0 +1,21 @@
+wait() sync process
+pthread_join() sync threads
+
+Problemas:
+Seccion critica
+Productor Consumidor
+Lecturas - Escrituras
+Cliente - Servidor
+Hay un segmento del proceso en el que se almacena lo que tenía el hilo
+
+condición de carrera, (data race) es cuando se perdió 
+OpenMP 
+
+Tarea
+Atomizar un pedazo de codigo con
+- tuberia
+- semaforo
+    - sem_wait()
+    - sem_post()
+
+- mutex
