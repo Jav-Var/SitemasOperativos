@@ -1,4 +1,0 @@
-mkfifo()
-socket(), bind(), list(), connect()
-shmget()
-mmap()

@@ -1,4 +1,0 @@
-Nombre: Javier
-Apellido: Vargas
-Edad: 18 años
-Estatura 170 cm

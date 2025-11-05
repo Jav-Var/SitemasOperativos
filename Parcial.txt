@@ -1,0 +1,60 @@
+En general:
+Concurrencia y gestion de procesos, fork, pthread
+Saber sobre Inter-process communication (IPC). pipes, shared memory, sockets
+Saber de sincronizacion de procesos. mutex
+Entender que es un file descriptor
+Saber hacer un Makefile
+
+Cosas random:
+Que es el cache
+Que es una condicion de carrera
+
+Fork:
+- fork()
+
+Pipes:
+- mkfifo()
+
+Sockets:
+- socket()
+- bind()
+- listen()
+- connect()
+
+Shared Memory:
+- shmget()
+- mmap()
+
+Threads:
+- pthread_create()
+- pthread_join()
+
+Synchronization:
+- wait()
+- pthread_join()
+- sem_wait()
+- sem_post()
+
+
+
+wait() sync process
+pthread_join() sync threads
+
+Problemas:
+Seccion critica
+Productor Consumidor
+Lecturas - Escrituras
+Cliente - Servidor
+Hay un segmento del proceso en el que se almacena lo que tenía el hilo
+
+condición de carrera, (data race) es cuando se perdió 
+OpenMP 
+
+Tarea
+Atomizar un pedazo de codigo con
+- tuberia
+- semaforo
+    - sem_wait()
+    - sem_post()
+
+- mutex
